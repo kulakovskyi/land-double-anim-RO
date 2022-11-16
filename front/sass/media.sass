@@ -72,9 +72,16 @@
 
 @media screen and (max-width: 1800px)
   .bonus
+    &__footer
+      &-two
+        &-item
+          font-size: 14px
+          line-height: 18px
+          img
+            max-width: 165px
     &__txt
       transform-origin: bottom right
-      transform: scale(0.75)
+      transform: scale(0.7)
       right: 20%
       bottom: 188px
     &__win
@@ -153,10 +160,11 @@
     &__txt
       right: 18%
       bottom: 143px
+      transform: scale(0.6)
     &__win
       right: 12%
     &__footer
-      padding: 26px 26px 24px
+      padding: 15px 25px 13px
       &-one
         &-item
           &:not(:last-child)
@@ -173,6 +181,10 @@
             line-height: 20px
           img
             max-width: 42px
+      &-two
+        &-item
+          img
+            max-width: 150px
 
 @media screen and (max-width: 1368px) and (max-height: 770px)
   .bonus
@@ -274,6 +286,11 @@
       transform: scale(0.9)
       left: 431px
       top: 22px
+    &__footer
+      &-two
+        &-item
+          img
+            max-width: 115px
 
 @media screen and (max-width: 1260px) and (min-height: 770px)
   .bonus
@@ -286,7 +303,7 @@
     &__logo
       width: 325px
     &__txt
-      transform: scale(0.6)
+      transform: scale(0.55)
     &__time
       transform: scale(0.8)
       left: 451px
@@ -296,7 +313,7 @@
 @media screen and (max-width: 1150px)
   .bonus
     &__txt
-      transform: scale(0.6)
+      transform: scale(0.55)
       right: 15%
     &__win
       transform: scale(0.55)
@@ -311,7 +328,7 @@
     &__win
       right: 15%
     &__txt
-      transform: scale(0.55)
+      transform: scale(0.45)
 
 @media screen and (max-width: 1025px) and (max-height: 675px)
   .bonus
@@ -323,7 +340,7 @@
 @media screen and (max-width: 930px)
   .bonus
     &__txt
-      transform: scale(0.5)
+      transform: scale(0.45)
     &__gates
       transform: scale(0.65)
 
@@ -405,7 +422,7 @@
     &__line
       display: none
     &__txt
-      transform: scale(0.6)
+      transform: scale(0.55)
       bottom: 114px
       right: 9%
       &-arrow
@@ -427,6 +444,16 @@
         .right
           font-size: 16px
           line-height: 21px
+      &-two
+        flex-direction: row-reverse
+        &-item
+          font-size: 12px
+          line-height: 16px
+          text-align: left
+          &:last-child
+            margin: 0 20px 0 0
+          &:first-child
+            margin: 0
 
 @media screen and (max-width: 955px) and (orientation: portrait) and (max-height: 1010px)
   .bonus
@@ -453,8 +480,8 @@
       width: 100px
       height: 113px
     &__txt
-      transform: scale(0.5)
-      right: 16%
+      transform: scale(0.45)
+      right: 13%
 
 
 
@@ -634,12 +661,15 @@
         flex-direction: column-reverse
         align-items: center
         background: $blue
-        padding: 28px 15px 26px
+        padding: 24px 15px 22px
         width: 110%
         position: relative
         left: 50%
         transform: translateX(-50%)
         &-item
+          br
+
+            display: none
           &:not(:last-child)
             margin: 0
           &:last-child
@@ -706,6 +736,8 @@
         &-item
           .left
               font-size: 31px
+          .right
+            font-size: 9px
 
 @media screen and (max-width: 340px) and (orientation: portrait) and (max-height: 600px)
   .bonus
@@ -741,6 +773,12 @@
           .right
             font-size: 10px
             line-height: 15px
+      &-two
+        &-item
+          font-size: 9px
+          line-height: 12px
+          img
+            max-width: 75px
     &__gates
       transform: scale(0.45)
     &__link

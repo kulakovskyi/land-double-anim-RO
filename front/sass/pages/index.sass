@@ -9,7 +9,7 @@ $yellow-2: #FFE601
 $white: #FFFFFF
 $violet: #341656
 
-
+$font-suisse-reg: SuisseIntl-Regular, sans-serif //400
 $font-suisse-med: SuisseIntl-Medium, sans-serif // 500 //
 $font-suisse-semb: SuisseIntl-SemiBold, sans-serif //600 //
 $font-wulkan: WulkanDisplay, sans-serif
@@ -272,7 +272,7 @@ body
     left: 0
     width: 100%
     background: #00003D
-    padding: 32px 35px 30px
+    padding: 19px 30px 17px
     z-index: 10
     &-row
       display: flex
@@ -319,9 +319,15 @@ body
       align-items: center
       justify-content: center
       &-item
+        font-family: $font-suisse-reg
         display: flex
         align-items: center
         justify-content: center
+        color: #e8e8e8
+        font-size: 20px
+        line-height: 25px
+        letter-spacing: 0.02em
+        text-align: right
         &:not(:last-child)
           margin: 0 30px 0 0
 
